@@ -1,1 +1,1 @@
-# nana-potal-app
+native script application
