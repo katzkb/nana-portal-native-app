@@ -1,6 +1,6 @@
 {
   "nativescript": {
-    "id": "org.nativescript.nanapotalapp",
+    "id": "org.katzkb.nanapotalapp",
     "tns-android": {
       "version": "6.5.0"
     },
@@ -8,7 +8,7 @@
       "version": "6.5.0"
     }
   },
-  "description": "NativeScript Application",
+  "description": "Nana portal app",
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
