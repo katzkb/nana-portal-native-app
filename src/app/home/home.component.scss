@@ -1,13 +1,20 @@
 :host {
-  background-color: aqua;
-
   .tab-menu {
-    background-color: #3e62ad; // 9D95B4
+    background-color: #3e62ad;
+
     Button {
-      height: 80;
-      width:  96;
+      top:           6;
+      left:          6;
+      height:        80;
+      width:         80;
       border-radius: 50px;
-      background: #9D95B4;
+      background:    #3e62ad;
     }
+  }
+
+  .shadow {
+    height:           1;
+    width:            1;
+    background-color: none;
   }
 }

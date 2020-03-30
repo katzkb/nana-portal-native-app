@@ -1,10 +1,24 @@
 <ActionBar>
-    <Label text="7's portal app"></Label>
+    <Label text="portal app"></Label>
 </ActionBar>
-
+<!--<DockLayout>-->
+<!--    <Label text="content"></Label>-->
+<!--</DockLayout>-->
 <GridLayout class="page tab-menu" rows="auto, *, 100" columns="*, *, *">
     <!-- Add your page content here -->
-    <Button class="tab-button_merch" text="購入リスト" row="2" col="0"></Button> <!-- (tap)="onButtonTap() -->
-    <Button class="tab-button_live" text="ライブ" row="2" col="1"></Button> <!-- (tap)="onButtonTap() -->
-    <Button class="tab-button_goods" text="グッズ" row="2" col="2"></Button> <!-- (tap)="onButtonTap() -->
+    <AbsoluteLayout row="2" col="0">
+        <Label class="shadow"       (loaded)="onShadowLoaded($event)" ></Label>
+        <Label class="shadow-inset" (loaded)="onShadowInsetLoaded($event)" ></Label>
+        <Button class="tab-button_merch" text="Btn1"></Button> <!-- (tap)="onButtonTap() -->
+    </AbsoluteLayout>
+    <AbsoluteLayout row="2" col="1">
+        <Label class="shadow"       (loaded)="onShadowLoaded($event)" ></Label>
+        <Label class="shadow-inset" (loaded)="onShadowInsetLoaded($event)" ></Label>
+        <Button class="tab-button_live"  text="Btn2"></Button> <!-- (tap)="onButtonTap() -->
+    </AbsoluteLayout>
+    <AbsoluteLayout row="2" col="2">
+        <Label class="shadow"       (loaded)="onShadowLoaded($event)" ></Label>
+        <Label class="shadow-inset" (loaded)="onShadowInsetLoaded($event)" ></Label>
+        <Button class="tab-button_goods" text="Btn3"></Button> <!-- (tap)="onButtonTap() -->
+    </AbsoluteLayout>
 </GridLayout>
