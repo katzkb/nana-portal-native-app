@@ -1,8 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import {Component, OnInit} from "@angular/core";
 
 @Component({
     selector: "Home",
-    templateUrl: "./home.component.html"
+    templateUrl: "./home.component.html",
+    styleUrls:  ["./home.component.scss"]
 })
 export class HomeComponent implements OnInit {
 
@@ -13,4 +14,12 @@ export class HomeComponent implements OnInit {
     ngOnInit(): void {
         // Init your component properties here.
     }
+
+    // onButtonTap(): void {
+    //     console.log("Button was pressed");
+    // }
+    //
+    // onButtonTap(): void {
+    //     console.log("Button was pressed");
+    // }
 }

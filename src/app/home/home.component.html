@@ -2,6 +2,9 @@
     <Label text="7's portal app"></Label>
 </ActionBar>
 
-<GridLayout>
+<GridLayout class="page tab-menu" rows="auto, *, 100" columns="*, *, *">
     <!-- Add your page content here -->
+    <Button class="tab-button_merch" text="購入リスト" row="2" col="0"></Button> <!-- (tap)="onButtonTap() -->
+    <Button class="tab-button_live" text="ライブ" row="2" col="1"></Button> <!-- (tap)="onButtonTap() -->
+    <Button class="tab-button_goods" text="グッズ" row="2" col="2"></Button> <!-- (tap)="onButtonTap() -->
 </GridLayout>
