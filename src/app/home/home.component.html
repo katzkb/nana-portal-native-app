@@ -4,21 +4,46 @@
 <!--<DockLayout>-->
 <!--    <Label text="content"></Label>-->
 <!--</DockLayout>-->
-<GridLayout class="page tab-menu" rows="auto, *, 100" columns="*, *, *">
-    <!-- Add your page content here -->
-    <AbsoluteLayout row="2" col="0">
-        <Label class="shadow"       (loaded)="onShadowLoaded($event)" ></Label>
-        <Label class="shadow-inset" (loaded)="onShadowInsetLoaded($event)" ></Label>
-        <Button class="tab-button_merch" text="Btn1"></Button> <!-- (tap)="onButtonTap() -->
-    </AbsoluteLayout>
-    <AbsoluteLayout row="2" col="1">
-        <Label class="shadow"       (loaded)="onShadowLoaded($event)" ></Label>
-        <Label class="shadow-inset" (loaded)="onShadowInsetLoaded($event)" ></Label>
-        <Button class="tab-button_live"  text="Btn2"></Button> <!-- (tap)="onButtonTap() -->
-    </AbsoluteLayout>
-    <AbsoluteLayout row="2" col="2">
-        <Label class="shadow"       (loaded)="onShadowLoaded($event)" ></Label>
-        <Label class="shadow-inset" (loaded)="onShadowInsetLoaded($event)" ></Label>
-        <Button class="tab-button_goods" text="Btn3"></Button> <!-- (tap)="onButtonTap() -->
-    </AbsoluteLayout>
-</GridLayout>
+<DockLayout class="main">
+    <ScrollView orientation="vertical" dock="top" class="page-content">
+        <StackLayout class="m-15">
+            <Label width="60" height="50" class="h3 m-15" text="Title 1"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 2"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 3"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 4"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 5"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 6"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 7"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 8"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 9"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 10"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 11"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 12"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 13"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 14"></Label>
+            <Label width="60" height="50" class="h3 m-15" text="Title 15"></Label>
+        </StackLayout>
+    </ScrollView>
+
+    <GridLayout class="page tab-menu" dock="bottom" rows="auto, *, 100" columns="*, *, *">
+        <AbsoluteLayout>
+            <Label class="shadow__tab-menu" (loaded)="onShadowLoaded($event)" ></Label>
+        </AbsoluteLayout>
+        <!-- Add your page content here -->
+        <AbsoluteLayout row="2" col="0">
+            <Label class="shadow"       (loaded)="onShadowLoaded($event)" ></Label>
+            <Label class="shadow-inset" (loaded)="onShadowInsetLoaded($event)" ></Label>
+            <Button class="tab-button_merch" text="Btn1"></Button> <!-- (tap)="onButtonTap() -->
+        </AbsoluteLayout>
+        <AbsoluteLayout row="2" col="1">
+            <Label class="shadow"       (loaded)="onShadowLoaded($event)" ></Label>
+            <Label class="shadow-inset" (loaded)="onShadowInsetLoaded($event)" ></Label>
+            <Button class="tab-button_live"  text="Btn2"></Button> <!-- (tap)="onButtonTap() -->
+        </AbsoluteLayout>
+        <AbsoluteLayout row="2" col="2">
+            <Label class="shadow"       (loaded)="onShadowLoaded($event)" ></Label>
+            <Label class="shadow-inset" (loaded)="onShadowInsetLoaded($event)" ></Label>
+            <Button class="tab-button_goods" text="Btn3"></Button> <!-- (tap)="onButtonTap() -->
+        </AbsoluteLayout>
+    </GridLayout>
+</DockLayout>

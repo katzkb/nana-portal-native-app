@@ -3,6 +3,10 @@ import { View }      from "tns-core-modules/ui/page";
 import { isIOS }     from "tns-core-modules/platform";
 import { Color }     from "tns-core-modules/color"
 
+export function shadow(args: EventData, color: string) {
+
+}
+
 export function boxShadow(args: EventData) {
     const view = args.object as View;
     if (isIOS) {

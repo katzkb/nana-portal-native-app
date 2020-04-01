@@ -1,6 +1,16 @@
 :host {
-  .tab-menu {
+  .main {
     background-color: #3e62ad;
+  }
+
+  .page-content {
+    height: 580;
+  }
+
+  .tab-menu {
+    height: 120;
+    background-color: white;
+    border-radius: 80px;
 
     Button {
       top:           6;
